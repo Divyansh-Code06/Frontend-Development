@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Mode</title>
+    <style>
+        * {
+            
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: lightblue;
+             
+        }
+        .box2 {
+            color: yellow;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 25px;
+            height: 200px;
+            box-sizing: border-box; 
+            /* it is used to include padding and border in the element's total width and height */
+
+        }
+        .box1 {
+            color: red;
+             padding: 10px;
+            border: 2px solid blueviolet;
+            margin: 25px;
+            height: 200px;
+            box-sizing: border-box;
+            /* margin collapses with the parent element the element which will have more margin will be considered */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box2">I am a box</div>
+    <div class="box box1">I am another box</div>
+
+</body>
+</html>

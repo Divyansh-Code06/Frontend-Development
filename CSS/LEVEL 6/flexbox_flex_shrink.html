@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin-right: 5px;
+}
+#heading {margin-left: 50px;}
+#container {
+    height: 150px;
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#box1 { background-color: aqua;}
+#box2 { background-color: blueviolet;}
+#box3 {
+    background-color: yellow;
+    flex-grow: 4;
+    /* Flex-Grow and flex-shrink are used to manage the size of container compared to another */
+}
+#box4 { background-color: tomato;}
+    </style>
+</head>
+<body>
+    <h1 id="flexbox-flex-shrink">Flexbox Flex Shrink</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+    </div>
+</body>
+</html>

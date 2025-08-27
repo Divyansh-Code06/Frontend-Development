@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-left: 5px;
+        padding: 10px;
+      }
+      #flexbox-direction {
+        text-align: center;
+      }
+      /* all the box or element in the container will will not come out of the container on changing the length and breath of the container */
+      #container {
+        height: 150px;
+        width: 600px;
+        padding: 10px;
+        margin: 20px;
+        border: 3px solid black;
+
+        /* by default flexbox items are laid out in a row. */
+
+        display: flex;
+        flex-direction: row-reverse;
+        /* row, row-reverse, column, column-reverse are the four main axis directions in flexbox. */
+      }
+
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: blueviolet;
+      }
+      #box3 {
+        background-color: yellow;
+      }
+      #box4 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="flexbox-direction">Flexbox Direction</h1>
+
+    <div id="container">
+      <div id="box1" class="box">teh amnshb ubsjjKjjnJib uhb</div>
+      <div id="box2" class="box"></div>
+      <div id="box3" class="box"></div>
+      <div id="box4" class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    margin-right: 5px;
+}
+#heading {margin-left: 50px;}
+#container {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    /* Align Content is used to manage the space between rows in a flex container in column direction */
+}
+
+#box1 { background-color: aqua;}
+#box2 { background-color: blueviolet;}
+#box3 { background-color: yellow;}
+#box4 { background-color: hotpink;}
+#box5 { background-color: gold}
+#box6 { background-color: lightslategray;}
+    </style>
+</head>
+<body>
+    <h1 id="flexbox-align-content">Flexbox Align Content</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+        <div id="box5" class="box">Box 5</div>
+        <div id="box6" class="box">Box 6</div>
+    </div>
+</body>
+</html>

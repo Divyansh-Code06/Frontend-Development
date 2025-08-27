@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin-right: 5px;
+        }
+        #flex_wrap {text-align: center;}
+        #container {
+            height: 600px;
+            width: 600px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* Three type of flex-wrap values in flexbox are: nowrap, wrap, wrap-reverse */
+        }
+
+        #box1 { background-color: aqua;}
+        #box2 { background-color: blueviolet;}
+        #box3 { background-color: yellow;}
+        #box4 { background-color: tomato;}
+        #box5 { background-color: lightgreen;}
+        #box6 { background-color: lightblue;}
+    </style>
+</head>
+<body>
+    <h1 id="flex_wrap">flex_wrap</h1>
+
+    <div id="container">
+      <div id="box1" class="box">teh amnshb ubsjjKjjnJib uhb</div>
+      <div id="box2" class="box"></div>
+      <div id="box3" class="box"></div>
+      <div id="box4" class="box"></div>
+      <div id="box5" class="box"></div>
+      <div id="box6" class="box"></div>
+    </div>
+    
+</body>
+</html>
